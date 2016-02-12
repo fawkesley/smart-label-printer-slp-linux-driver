@@ -1,0 +1,209 @@
+*PPD-Adobe: "4.3"
+*%%%% PPD file for SLP450 with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v1.5.3.
+*% Seiko Instruments Inc Smart Label Printer PPD file for
+*% the Common UNIX Printing System (CUPS).
+*% Copyright 1997-2003 by Easy Software Products.
+*% These coded instructions, statements, and computer programs are the
+*% property of Easy Software Products and are pr
+*FormatVersion: "4.3"
+*FileVersion: "1.8"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "siislp450.ppd"
+*Product: "(SII SLP450)"
+*Manufacturer: "SII"
+*ModelName: "SII SLP450"
+*ShortNickName: "SII SLP450"
+*NickName: "SII SLP450, 1.8"
+*PSVersion: "(3010.000) 550"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "25"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Driver-defined attributes...
+*APPrinterIconPath: "/Library/Printers/SII/rastertosiislp.app/Contents/Resources/DriverIcons/slp450.icns"
+*cupsVersion: 1.5
+*cupsModelNumber: 1282
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 0 /Library/Printers/SII/rastertosiislp.app/Contents/MacOS/rastertosiislp"
+*cupsLanguages: "en"
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: AddressSmall
+*PageSize 8mmSpine/8mm Spine (SLP-27210): "<</PageSize[187 26]/ImagingBBox null>>setpagedevice"
+*PageSize 35mmSlide/35mm Slide (SLP-35L): "<</PageSize[26 104]/ImagingBBox null>>setpagedevice"
+*PageSize AddressLarge/Address - Large (SLP-2RLE): "<</PageSize[236 99]/ImagingBBox null>>setpagedevice"
+*PageSize AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "<</PageSize[236 68]/ImagingBBox null>>setpagedevice"
+*PageSize Diskette/Diskette (SLP-DRL): "<</PageSize[181 136]/ImagingBBox null>>setpagedevice"
+*PageSize EuroFolderNarrow/Euro Folder - Narrow (SLP-FN): "<</PageSize[526 107]/ImagingBBox null>>setpagedevice"
+*PageSize EuroFolderWide/Euro Folder - Wide (SLP-FW): "<</PageSize[526 136]/ImagingBBox null>>setpagedevice"
+*PageSize EuroNameBadge/Euro Name Badge (SLP-ENT): "<</PageSize[189 108]/ImagingBBox null>>setpagedevice"
+*PageSize FileFolder/File Folder (SLP-FLW): "<</PageSize[230 37]/ImagingBBox null>>setpagedevice"
+*PageSize Jewelry/Jewelry (SLP-Jewel): "<</PageSize[76 136]/ImagingBBox null>>setpagedevice"
+*PageSize MediaBadge/Media Badge (SLP-NB, SLP-NR): "<</PageSize[180 136]/ImagingBBox null>>setpagedevice"
+*PageSize MultiPurpose/Multi-Purpose (SLP-MRL): "<</PageSize[126 68]/ImagingBBox null>>setpagedevice"
+*PageSize Return/Return (SLP-RTN): "<</PageSize[122 45]/ImagingBBox null>>setpagedevice"
+*PageSize Round/Round (SLP-RND): "<</PageSize[62 68]/ImagingBBox null>>setpagedevice"
+*PageSize Shipping/Shipping (SLP-SRL): "<</PageSize[271 136]/ImagingBBox null>>setpagedevice"
+*PageSize VHSFace/VHS Face (SLP-VTL): "<</PageSize[205 127]/ImagingBBox null>>setpagedevice"
+*PageSize VHSSpine/VHS Spine (SLP-VSL): "<</PageSize[400 50]/ImagingBBox null>>setpagedevice"
+*PageSize ZipDisk/Zip Disk (SLP-ZIP): "<</PageSize[156 136]/ImagingBBox null>>setpagedevice"
+*PageSize CutHanging13/1/3 cut hanging file folder (SLP-3HFL): "<</PageSize[90 222]/ImagingBBox null>>setpagedevice"
+*PageSize CutHanging15/1/5 cut hanging file folder (SLP-5HFL): "<</PageSize[90 114]/ImagingBBox null>>setpagedevice"
+*PageSize EuroFileFolder/European File folder (SLP-EHFL): "<</PageSize[139 112]/ImagingBBox null>>setpagedevice"
+*PageSize RetailLabel/Retail Label (SLP-RTL): "<</PageSize[90 104]/ImagingBBox null>>setpagedevice"
+*PageSize EuroNameBadgeLarge/Euro Name Badge Large (SLP-ENTL, SLP-FCS2): "<</PageSize[223 136]/ImagingBBox null>>setpagedevice"
+*PageSize TopCoatedPaper/Topcoated Paper is 150 mm length (SLP-P150, SLP-DIA): "<</PageSize[396 136]/ImagingBBox null>>setpagedevice"
+*PageSize 4PartLabel/4-Part Label (SLP-MPL4): "<</PageSize[271 136]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: AddressSmall
+*PageRegion 8mmSpine/8mm Spine (SLP-27210): "<</PageSize[187 26]/ImagingBBox null>>setpagedevice"
+*PageRegion 35mmSlide/35mm Slide (SLP-35L): "<</PageSize[26 104]/ImagingBBox null>>setpagedevice"
+*PageRegion AddressLarge/Address - Large (SLP-2RLE): "<</PageSize[236 99]/ImagingBBox null>>setpagedevice"
+*PageRegion AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "<</PageSize[236 68]/ImagingBBox null>>setpagedevice"
+*PageRegion Diskette/Diskette (SLP-DRL): "<</PageSize[181 136]/ImagingBBox null>>setpagedevice"
+*PageRegion EuroFolderNarrow/Euro Folder - Narrow (SLP-FN): "<</PageSize[526 107]/ImagingBBox null>>setpagedevice"
+*PageRegion EuroFolderWide/Euro Folder - Wide (SLP-FW): "<</PageSize[526 136]/ImagingBBox null>>setpagedevice"
+*PageRegion EuroNameBadge/Euro Name Badge (SLP-ENT): "<</PageSize[189 108]/ImagingBBox null>>setpagedevice"
+*PageRegion FileFolder/File Folder (SLP-FLW): "<</PageSize[230 37]/ImagingBBox null>>setpagedevice"
+*PageRegion Jewelry/Jewelry (SLP-Jewel): "<</PageSize[76 136]/ImagingBBox null>>setpagedevice"
+*PageRegion MediaBadge/Media Badge (SLP-NB, SLP-NR): "<</PageSize[180 136]/ImagingBBox null>>setpagedevice"
+*PageRegion MultiPurpose/Multi-Purpose (SLP-MRL): "<</PageSize[126 68]/ImagingBBox null>>setpagedevice"
+*PageRegion Return/Return (SLP-RTN): "<</PageSize[122 45]/ImagingBBox null>>setpagedevice"
+*PageRegion Round/Round (SLP-RND): "<</PageSize[62 68]/ImagingBBox null>>setpagedevice"
+*PageRegion Shipping/Shipping (SLP-SRL): "<</PageSize[271 136]/ImagingBBox null>>setpagedevice"
+*PageRegion VHSFace/VHS Face (SLP-VTL): "<</PageSize[205 127]/ImagingBBox null>>setpagedevice"
+*PageRegion VHSSpine/VHS Spine (SLP-VSL): "<</PageSize[400 50]/ImagingBBox null>>setpagedevice"
+*PageRegion ZipDisk/Zip Disk (SLP-ZIP): "<</PageSize[156 136]/ImagingBBox null>>setpagedevice"
+*PageRegion CutHanging13/1/3 cut hanging file folder (SLP-3HFL): "<</PageSize[90 222]/ImagingBBox null>>setpagedevice"
+*PageRegion CutHanging15/1/5 cut hanging file folder (SLP-5HFL): "<</PageSize[90 114]/ImagingBBox null>>setpagedevice"
+*PageRegion EuroFileFolder/European File folder (SLP-EHFL): "<</PageSize[139 112]/ImagingBBox null>>setpagedevice"
+*PageRegion RetailLabel/Retail Label (SLP-RTL): "<</PageSize[90 104]/ImagingBBox null>>setpagedevice"
+*PageRegion EuroNameBadgeLarge/Euro Name Badge Large (SLP-ENTL, SLP-FCS2): "<</PageSize[223 136]/ImagingBBox null>>setpagedevice"
+*PageRegion TopCoatedPaper/Topcoated Paper is 150 mm length (SLP-P150, SLP-DIA): "<</PageSize[396 136]/ImagingBBox null>>setpagedevice"
+*PageRegion 4PartLabel/4-Part Label (SLP-MPL4): "<</PageSize[271 136]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: AddressSmall
+*ImageableArea 8mmSpine/8mm Spine (SLP-27210): "0 0 187.199996948242 25.920001983643"
+*ImageableArea 35mmSlide/35mm Slide (SLP-35L): "0 0 25.920001983643 103.68000793457"
+*ImageableArea AddressLarge/Address - Large (SLP-2RLE): "0 0 236.160003662109 98.639999389648"
+*ImageableArea AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "0 0 236.160003662109 68.400001525879"
+*ImageableArea Diskette/Diskette (SLP-DRL): "0 0 181.080001831055 136.223999023438"
+*ImageableArea EuroFolderNarrow/Euro Folder - Narrow (SLP-FN): "0 0 526.320007324219 106.559997558594"
+*ImageableArea EuroFolderWide/Euro Folder - Wide (SLP-FW): "0 0 526.320007324219 136.223999023438"
+*ImageableArea EuroNameBadge/Euro Name Badge (SLP-ENT): "0 0 188.639984130859 108"
+*ImageableArea FileFolder/File Folder (SLP-FLW): "0 0 230.400009155273 37.439998626709"
+*ImageableArea Jewelry/Jewelry (SLP-Jewel): "0 0 76.31999206543 136.223999023438"
+*ImageableArea MediaBadge/Media Badge (SLP-NB, SLP-NR): "0 0 180 136.223999023438"
+*ImageableArea MultiPurpose/Multi-Purpose (SLP-MRL): "0 0 126 68.400001525879"
+*ImageableArea Return/Return (SLP-RTN): "0 0 122.400001525879 45"
+*ImageableArea Round/Round (SLP-RND): "0 0 61.920001983643 68.040000915527"
+*ImageableArea Shipping/Shipping (SLP-SRL): "0 0 271.440002441406 136.223999023438"
+*ImageableArea VHSFace/VHS Face (SLP-VTL): "0 0 205.199996948242 127.440002441406"
+*ImageableArea VHSSpine/VHS Spine (SLP-VSL): "0 0 399.600006103516 50.399997711182"
+*ImageableArea ZipDisk/Zip Disk (SLP-ZIP): "0 0 155.520004272461 136.223999023438"
+*ImageableArea CutHanging13/1/3 cut hanging file folder (SLP-3HFL): "0 0 90 221.759994506836"
+*ImageableArea CutHanging15/1/5 cut hanging file folder (SLP-5HFL): "0 0 90 113.76000213623"
+*ImageableArea EuroFileFolder/European File folder (SLP-EHFL): "0 0 138.959991455078 111.599998474121"
+*ImageableArea RetailLabel/Retail Label (SLP-RTL): "0 0 90 104.400001525879"
+*ImageableArea EuroNameBadgeLarge/Euro Name Badge Large (SLP-ENTL, SLP-FCS2): "0 0 223.199996948242 136.223999023438"
+*ImageableArea TopCoatedPaper/Topcoated Paper is 150 mm length (SLP-P150, SLP-DIA): "0 0 396 136.223999023438"
+*ImageableArea 4PartLabel/4-Part Label (SLP-MPL4): "0 0 271.440002441406 136.080001831055"
+*DefaultPaperDimension: AddressSmall
+*PaperDimension 8mmSpine/8mm Spine (SLP-27210): "187.199996948242 25.920001983643"
+*PaperDimension 35mmSlide/35mm Slide (SLP-35L): "25.920001983643 103.68000793457"
+*PaperDimension AddressLarge/Address - Large (SLP-2RLE): "236.160003662109 98.639999389648"
+*PaperDimension AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "236.160003662109 68.400001525879"
+*PaperDimension Diskette/Diskette (SLP-DRL): "181.080001831055 136.223999023438"
+*PaperDimension EuroFolderNarrow/Euro Folder - Narrow (SLP-FN): "526.320007324219 106.559997558594"
+*PaperDimension EuroFolderWide/Euro Folder - Wide (SLP-FW): "526.320007324219 136.223999023438"
+*PaperDimension EuroNameBadge/Euro Name Badge (SLP-ENT): "188.639984130859 108"
+*PaperDimension FileFolder/File Folder (SLP-FLW): "230.400009155273 37.439998626709"
+*PaperDimension Jewelry/Jewelry (SLP-Jewel): "76.31999206543 136.223999023438"
+*PaperDimension MediaBadge/Media Badge (SLP-NB, SLP-NR): "180 136.223999023438"
+*PaperDimension MultiPurpose/Multi-Purpose (SLP-MRL): "126 68.400001525879"
+*PaperDimension Return/Return (SLP-RTN): "122.400001525879 45"
+*PaperDimension Round/Round (SLP-RND): "61.920001983643 68.040000915527"
+*PaperDimension Shipping/Shipping (SLP-SRL): "271.440002441406 136.223999023438"
+*PaperDimension VHSFace/VHS Face (SLP-VTL): "205.199996948242 127.440002441406"
+*PaperDimension VHSSpine/VHS Spine (SLP-VSL): "399.600006103516 50.399997711182"
+*PaperDimension ZipDisk/Zip Disk (SLP-ZIP): "155.520004272461 136.223999023438"
+*PaperDimension CutHanging13/1/3 cut hanging file folder (SLP-3HFL): "90 221.759994506836"
+*PaperDimension CutHanging15/1/5 cut hanging file folder (SLP-5HFL): "90 113.76000213623"
+*PaperDimension EuroFileFolder/European File folder (SLP-EHFL): "138.959991455078 111.599998474121"
+*PaperDimension RetailLabel/Retail Label (SLP-RTL): "90 104.400001525879"
+*PaperDimension EuroNameBadgeLarge/Euro Name Badge Large (SLP-ENTL, SLP-FCS2): "223.199996948242 136.223999023438"
+*PaperDimension TopCoatedPaper/Topcoated Paper is 150 mm length (SLP-P150, SLP-DIA): "396 136.223999023438"
+*PaperDimension 4PartLabel/4-Part Label (SLP-MPL4): "271.440002441406 136.080001831055"
+*MaxMediaWidth: "526.320007324219"
+*MaxMediaHeight: "136.223999023438"
+*HWMargins: 0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 36 526.320007324219
+*ParamCustomPageSize Height: 2 points 36 136.223999023438
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 300dpi
+*Resolution 300dpi/300 DPI: "<</HWResolution[300 300]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+*OpenGroup: SIISLPOptions/SIISLPOptions
+*OpenUI *Density/Output Quality: PickOne
+*OrderDependency: 10 AnySetup *Density
+*DefaultDensity: MediumQuality
+*Density LowQuality/Low: ""
+*Density MediumQuality/Medium: ""
+*Density HighQuality/High: ""
+*CloseUI: *Density
+*OpenUI *FinePrint/Fine Print: Boolean
+*OrderDependency: 10 AnySetup *FinePrint
+*DefaultFinePrint: False
+*FinePrint True/1: ""
+*FinePrint False/0: ""
+*CloseUI: *FinePrint
+*CloseGroup: SIISLPOptions
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(1.05)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(1.05)" Standard ROM
+*Font AvantGarde-Demi: Standard "(1.05)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(1.05)" Standard ROM
+*Font Bookman-Demi: Standard "(1.05)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(1.05)" Standard ROM
+*Font Bookman-Light: Standard "(1.05)" Standard ROM
+*Font Bookman-LightItalic: Standard "(1.05)" Standard ROM
+*Font Courier: Standard "(1.05)" Standard ROM
+*Font Courier-Bold: Standard "(1.05)" Standard ROM
+*Font Courier-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Courier-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica: Standard "(1.05)" Standard ROM
+*Font Helvetica-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Oblique: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(1.05)" Standard ROM
+*Font Palatino-Bold: Standard "(1.05)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Palatino-Italic: Standard "(1.05)" Standard ROM
+*Font Palatino-Roman: Standard "(1.05)" Standard ROM
+*Font Symbol: Special "(001.005)" Special ROM
+*Font Times-Bold: Standard "(1.05)" Standard ROM
+*Font Times-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Times-Italic: Standard "(1.05)" Standard ROM
+*Font Times-Roman: Standard "(1.05)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(1.05)" Standard ROM
+*Font ZapfDingbats: Special "(001.005)" Special ROM
+*% End of siislp450.ppd, 14305 bytes.

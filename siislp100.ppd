@@ -1,0 +1,141 @@
+*PPD-Adobe: "4.3"
+*%%%% PPD file for SLP100/410 with CUPS.
+*%%%% Created by the CUPS PPD Compiler CUPS v1.5.3.
+*% Seiko Instruments Inc Smart Label Printer PPD file for
+*% the Common UNIX Printing System (CUPS).
+*% Copyright 1997-2003 by Easy Software Products.
+*% These coded instructions, statements, and computer programs are the
+*% property of Easy Software Products and are pr
+*FormatVersion: "4.3"
+*FileVersion: "1.8"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "siislp100.ppd"
+*Product: "(SII SLP100)"
+*Manufacturer: "SII"
+*ModelName: "SII SLP100/410"
+*ShortNickName: "SII SLP100/410"
+*NickName: "SII SLP100/410, 1.8"
+*PSVersion: "(3010.000) 550"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "6"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*% Driver-defined attributes...
+*APPrinterIconPath: "/Library/Printers/SII/rastertosiislp.app/Contents/Resources/DriverIcons/slp410.icns"
+*cupsVersion: 1.5
+*cupsModelNumber: 259
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 0 /Library/Printers/SII/rastertosiislp.app/Contents/MacOS/rastertosiislp"
+*cupsLanguages: "en"
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: AddressSmall
+*PageSize 35mmSlide/35mm Slide (SLP-35L): "<</PageSize[26 104]/ImagingBBox null>>setpagedevice"
+*PageSize 8mmSpine/8mm Spine (SLP-27210): "<</PageSize[187 26]/ImagingBBox null>>setpagedevice"
+*PageSize AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "<</PageSize[236 68]/ImagingBBox null>>setpagedevice"
+*PageSize FileFolder/File Folder (SLP-FLW): "<</PageSize[230 37]/ImagingBBox null>>setpagedevice"
+*PageSize MultiPurpose/Multi-Purpose (SLP-MRL): "<</PageSize[126 68]/ImagingBBox null>>setpagedevice"
+*PageSize VHSSpine/VHS Spine (SLP-VSL): "<</PageSize[400 50]/ImagingBBox null>>setpagedevice"
+*PageSize Round/Round (SLP-RND): "<</PageSize[62 68]/ImagingBBox null>>setpagedevice"
+*PageSize Return/Return (SLP-RTN): "<</PageSize[122 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: AddressSmall
+*PageRegion 35mmSlide/35mm Slide (SLP-35L): "<</PageSize[26 104]/ImagingBBox null>>setpagedevice"
+*PageRegion 8mmSpine/8mm Spine (SLP-27210): "<</PageSize[187 26]/ImagingBBox null>>setpagedevice"
+*PageRegion AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "<</PageSize[236 68]/ImagingBBox null>>setpagedevice"
+*PageRegion FileFolder/File Folder (SLP-FLW): "<</PageSize[230 37]/ImagingBBox null>>setpagedevice"
+*PageRegion MultiPurpose/Multi-Purpose (SLP-MRL): "<</PageSize[126 68]/ImagingBBox null>>setpagedevice"
+*PageRegion VHSSpine/VHS Spine (SLP-VSL): "<</PageSize[400 50]/ImagingBBox null>>setpagedevice"
+*PageRegion Round/Round (SLP-RND): "<</PageSize[62 68]/ImagingBBox null>>setpagedevice"
+*PageRegion Return/Return (SLP-RTN): "<</PageSize[122 45]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: AddressSmall
+*ImageableArea 35mmSlide/35mm Slide (SLP-35L): "0 0 25.920001983643 103.68000793457"
+*ImageableArea 8mmSpine/8mm Spine (SLP-27210): "0 0 187.199996948242 25.920001983643"
+*ImageableArea AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "0 0 236.160003662109 68.400001525879"
+*ImageableArea FileFolder/File Folder (SLP-FLW): "0 0 230.400009155273 37.439998626709"
+*ImageableArea MultiPurpose/Multi-Purpose (SLP-MRL): "0 0 126 68.400001525879"
+*ImageableArea VHSSpine/VHS Spine (SLP-VSL): "0 0 399.600006103516 50.399997711182"
+*ImageableArea Round/Round (SLP-RND): "0 0 61.920001983643 68.040000915527"
+*ImageableArea Return/Return (SLP-RTN): "0 0 122.400001525879 45"
+*DefaultPaperDimension: AddressSmall
+*PaperDimension 35mmSlide/35mm Slide (SLP-35L): "25.920001983643 103.68000793457"
+*PaperDimension 8mmSpine/8mm Spine (SLP-27210): "187.199996948242 25.920001983643"
+*PaperDimension AddressSmall/Address - Small (SLP-1RL, SLP-2RL): "236.160003662109 68.400001525879"
+*PaperDimension FileFolder/File Folder (SLP-FLW): "230.400009155273 37.439998626709"
+*PaperDimension MultiPurpose/Multi-Purpose (SLP-MRL): "126 68.400001525879"
+*PaperDimension VHSSpine/VHS Spine (SLP-VSL): "399.600006103516 50.399997711182"
+*PaperDimension Round/Round (SLP-RND): "61.920001983643 68.040000915527"
+*PaperDimension Return/Return (SLP-RTN): "122.400001525879 45"
+*MaxMediaWidth: "526.320007324219"
+*MaxMediaHeight: "136.223999023438"
+*HWMargins: 0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 36 526.320007324219
+*ParamCustomPageSize Height: 2 points 36 136.223999023438
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 203dpi
+*Resolution 203dpi/203 DPI: "<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+*OpenGroup: SIISLPOptions/SIISLPOptions
+*OpenUI *Density/Output Quality: PickOne
+*OrderDependency: 10 AnySetup *Density
+*DefaultDensity: MediumQuality
+*Density LowQuality/Low: ""
+*Density MediumQuality/Medium: ""
+*Density HighQuality/High: ""
+*CloseUI: *Density
+*OpenUI *FinePrint/Fine Print: Boolean
+*OrderDependency: 10 AnySetup *FinePrint
+*DefaultFinePrint: False
+*FinePrint True/1: ""
+*FinePrint False/0: ""
+*CloseUI: *FinePrint
+*CloseGroup: SIISLPOptions
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(1.05)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(1.05)" Standard ROM
+*Font AvantGarde-Demi: Standard "(1.05)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(1.05)" Standard ROM
+*Font Bookman-Demi: Standard "(1.05)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(1.05)" Standard ROM
+*Font Bookman-Light: Standard "(1.05)" Standard ROM
+*Font Bookman-LightItalic: Standard "(1.05)" Standard ROM
+*Font Courier: Standard "(1.05)" Standard ROM
+*Font Courier-Bold: Standard "(1.05)" Standard ROM
+*Font Courier-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Courier-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica: Standard "(1.05)" Standard ROM
+*Font Helvetica-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(1.05)" Standard ROM
+*Font Helvetica-Oblique: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(1.05)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(1.05)" Standard ROM
+*Font Palatino-Bold: Standard "(1.05)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Palatino-Italic: Standard "(1.05)" Standard ROM
+*Font Palatino-Roman: Standard "(1.05)" Standard ROM
+*Font Symbol: Special "(001.005)" Special ROM
+*Font Times-Bold: Standard "(1.05)" Standard ROM
+*Font Times-BoldItalic: Standard "(1.05)" Standard ROM
+*Font Times-Italic: Standard "(1.05)" Standard ROM
+*Font Times-Roman: Standard "(1.05)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(1.05)" Standard ROM
+*Font ZapfDingbats: Special "(001.005)" Special ROM
+*% End of siislp100.ppd, 07572 bytes.
