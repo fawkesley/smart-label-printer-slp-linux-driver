@@ -23,8 +23,8 @@
 
 mfdir     := $(shell pwd)
 program   := seikoslp.rastertolabel
-ppddir    := $(shell cups-config --datadir)/model/seiko
-filterdir := $(shell cups-config --serverbin)/filter
+ppddir    := $(DESTDIR)$(shell cups-config --datadir)/model/seiko
+filterdir := $(DESTDIR)$(shell cups-config --serverbin)/filter
 cflags    := $(shell cups-config --ldflags --cflags)
 ldflags   := $(shell cups-config --image --libs)
 
@@ -50,8 +50,9 @@ build:
 
 install:
 	make build
+	mkdir -p "$(filterdir)"
 	mv $(program) "$(filterdir)/"
-	mkdir "$(ppddir)"
+	mkdir -p "$(ppddir)"
 	gzip -c siislp100.ppd >> siislp100.ppd.gz
 	gzip -c siislp200.ppd >> siislp200.ppd.gz
 	gzip -c siislp240.ppd >> siislp240.ppd.gz
