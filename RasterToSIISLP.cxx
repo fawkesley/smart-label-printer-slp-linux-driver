@@ -33,11 +33,13 @@
 
 #include <cups/cups.h>
 #include <cups/raster.h>
+#include <cups/ppd.h>
 
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <vector>
+#include <cstdio>
 
 #include "SeikoSLPCommands.h"
 #include "SeikoInstrumentsVendorID.h"
