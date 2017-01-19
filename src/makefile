@@ -31,7 +31,6 @@ cflags    := $(shell cups-config --ldflags --cflags)
 ldflags   := $(shell cups-config --image --libs)
 
 build:
-	make clean
 	$(CXX) -o $(program) $(cflags) *.cxx $(ldflags)
 	# set up the filter directory in the ppd correctly.
 	perl -p -i -e 's(^.cupsFilter.*\Z) <*cupsFilter: "application/vnd.cups-raster 0 $(filterdir)/$(program)">g' siislp100.ppd
@@ -51,7 +50,6 @@ build:
 	perl -p -i -e "s#\(^.APPrinterIconPath.*\$\)\n##g" siislp650.ppd
 
 install:
-	make build
 	mkdir -p "$(filterdestdir)"
 	mv $(program) "$(filterdestdir)/"
 	mkdir -p "$(ppddestdir)"
