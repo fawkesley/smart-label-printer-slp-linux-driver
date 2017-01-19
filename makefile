@@ -25,11 +25,12 @@ mfdir     := $(shell pwd)
 program   := seikoslp.rastertolabel
 ppddir    := $(shell cups-config --datadir)/model/seiko
 filterdir := $(shell cups-config --serverbin)/filter
+ppddestdir    := $(DESTDIR)$(ppddir)
+filterdestdir := $(DESTDIR)$(filterdir)
 cflags    := $(shell cups-config --ldflags --cflags)
 ldflags   := $(shell cups-config --image --libs)
 
 build:
-	make clean
 	$(CXX) -o $(program) $(cflags) *.cxx $(ldflags)
 	# set up the filter directory in the ppd correctly.
 	perl -p -i -e 's(^.cupsFilter.*\Z) <*cupsFilter: "application/vnd.cups-raster 0 $(filterdir)/$(program)">g' siislp100.ppd
@@ -49,9 +50,9 @@ build:
 	perl -p -i -e "s#\(^.APPrinterIconPath.*\$\)\n##g" siislp650.ppd
 
 install:
-	make build
-	mv $(program) "$(filterdir)/"
-	mkdir "$(ppddir)"
+	mkdir -p "$(filterdestdir)"
+	mv $(program) "$(filterdestdir)/"
+	mkdir -p "$(ppddestdir)"
 	gzip -c siislp100.ppd >> siislp100.ppd.gz
 	gzip -c siislp200.ppd >> siislp200.ppd.gz
 	gzip -c siislp240.ppd >> siislp240.ppd.gz
@@ -59,11 +60,11 @@ install:
 	gzip -c siislp450.ppd >> siislp450.ppd.gz
 	gzip -c siislp620.ppd >> siislp620.ppd.gz
 	gzip -c siislp650.ppd >> siislp650.ppd.gz
-	mv *.ppd.gz "$(ppddir)"
+	mv *.ppd.gz "$(ppddestdir)"
 
 uninstall:
-	rm -rfv "$(ppddir)"
-	rm -rfv "$(filterdir)/$(program)"
+	rm -rfv "$(ppddestdir)"
+	rm -rfv "$(filterdestdir)/$(program)"
 
 clean:
 	rm -f $(program) *.o *~
