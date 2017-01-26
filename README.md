@@ -23,3 +23,7 @@ The original ZIP file checksums below:
 ## Binary packages
 
 - [Arch Linux](https://aur.archlinux.org/packages/sii-slp-cups-git/)
+
+## Acknowledgements
+
+Thumbs up @c-mauderer for improving the build script, and creating an Arch Linux package!
