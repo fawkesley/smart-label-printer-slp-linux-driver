@@ -20,7 +20,7 @@ The original ZIP file checksums below:
 - [danieloneill/SeikoSLPLinuxDriver](https://github.com/danieloneill/SeikoSLPLinuxDriver)
 - [hholzgra/sii_440_cups](hholzgra/sii_440_cups)
 
-## Binary packages
+## Linux packages
 
 - [Arch Linux](https://aur.archlinux.org/packages/sii-slp-cups-git/)
 
