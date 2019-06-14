@@ -19,6 +19,7 @@ The original ZIP file checksums below:
 
 - [danieloneill/SeikoSLPLinuxDriver](https://github.com/danieloneill/SeikoSLPLinuxDriver)
 - [hholzgra/sii_440_cups](hholzgra/sii_440_cups)
+- original zip now at (https://siibusinessproducts.com/wp-content/uploads/2017/06/SLP-400-600-SeikoSLPLinuxCUPSDriver.zip)
 
 ## Linux packages
 
